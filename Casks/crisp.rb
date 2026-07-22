@@ -1,6 +1,6 @@
 cask "crisp" do
   version "1.0.0"
-  sha256 "d8338c9d85f22929d6b4eb38d3a1065f7841de9f8c3523c989c8f2af89808532"
+  sha256 "b009df72e36aaee837673c72d15e7db9e06d24e6906739e410a82291f5dc0c86"
 
   url "https://github.com/didriksg/Crisp/releases/download/v#{version}/Crisp.dmg"
   name "Crisp"
@@ -13,7 +13,6 @@ cask "crisp" do
   end
 
   depends_on macos: ">= :sequoia"
-  depends_on arch: :arm64
 
   app "Crisp.app"
 
