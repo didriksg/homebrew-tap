@@ -1,6 +1,6 @@
 cask "crisp" do
-  version "1.0.1"
-  sha256 "79b23c344c991fa50ee9a83186f2eff3aa9ddc42d13a59cd3dbc27d00565a938"
+  version "1.0.3"
+  sha256 "9eb9ea7a7a4dc42cb2e9c948fa7cafc9c4e6ae641c2c94de70dff71a6c6feef0"
 
   url "https://github.com/didriksg/Crisp/releases/download/v#{version}/Crisp.dmg"
   name "Crisp"
