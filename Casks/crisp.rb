@@ -16,11 +16,6 @@ cask "crisp" do
 
   app "Crisp.app"
 
-  caveats <<~EOS
-    Crisp is ad-hoc signed, not notarized. If macOS blocks the first launch,
-    right-click Crisp.app and choose Open, or install with --no-quarantine.
-  EOS
-
   zap trash: [
     "~/Library/Preferences/com.crisp.app.plist",
   ]
