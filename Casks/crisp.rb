@@ -5,18 +5,20 @@ cask "crisp" do
   url "https://github.com/didriksg/Crisp/releases/download/v#{version}/Crisp.dmg"
   name "Crisp"
   desc "Menu bar display manager: DDC brightness, HiDPI, presets, virtual displays"
-  homepage "https://github.com/didriksg/Crisp"
+  homepage "https://crispmac.app/"
 
   livecheck do
     url :url
     strategy :github_latest
   end
 
-  depends_on macos: :sequoia
+  depends_on macos: :sonoma
 
   app "Crisp.app"
 
   zap trash: [
+    "~/Library/Application Support/Crisp",
+    "~/Library/Caches/com.crisp.app",
     "~/Library/Preferences/com.crisp.app.plist",
   ]
 end
